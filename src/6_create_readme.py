@@ -7,3 +7,4 @@
     #    find . -print
     # paste that output and the context off all your files into chat gpt
     # I use ''' as delimiters for the start and end of each file
+    # in your prompt say "in markdown format" for easy copy pasting

@@ -5,7 +5,7 @@
 This repository contains a collection of Python scripts and supporting files designed to demonstrate coding best practices, particularly focusing on how to structure, document, and maintain code effectively. It is structured for educational purposes and can be used by instructors to teach students about various programming concepts and best practices in software development.
 
 ## Repository Structure
-
+"""
 /project-root
 │
 ├── bin/                           # Shell scripts for automating command-line tasks
@@ -38,6 +38,7 @@ This repository contains a collection of Python scripts and supporting files des
 ├── data/                          # Directory for generated log files and datasets
 │
 └── .git/                          # Version control directory (Git)
+"""
 
 ## How to Use This Repository
 
