@@ -1,0 +1,27 @@
+{
+"SpO2": {
+    "high_range": 100,
+    "low_range": 90,
+    "diagnosis_high": "Hyperoxia",
+    "diagnosis_low": "Hypoxemia"
+    },
+    "HR": {
+    "high_range": 100,
+    "low_range": 60,
+    "diagnosis_high": "Tachycardia",
+    "diagnosis_low": "Bradycardia"
+    },
+    "Temp": {
+    "high_range": 100.4,
+    "low_range": 95.0,
+    "diagnosis_high": "Fever",
+    "diagnosis_low": "Hypothermia"
+    },
+    "BG": {
+    "high_range": 140,
+    "low_range": 70,
+    "diagnosis_high": "Hyperglycemia",
+    "diagnosis_low": "Hypoglycemia"
+    }
+}
+  
