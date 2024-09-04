@@ -4,42 +4,6 @@
 
 This repository contains a collection of Python scripts and supporting files designed to demonstrate coding best practices, particularly focusing on how to structure, document, and maintain code effectively. It is structured for educational purposes and can be used by instructors to teach students about various programming concepts and best practices in software development.
 
-## Repository Structure
-"""
-/project-root
-│
-├── bin/                           # Shell scripts for automating command-line tasks
-│   ├── SINGLE_command_line_arguments.sh
-│   ├── LOOP_command_line_arguments.sh
-│   ├── 0_bash_tutorial.sh
-│   ├── 1_simple_python.sh
-│   ├── 2_loop_python.sh
-│   ├── 3_actual_simpled.sh
-│   └── 4_actual_looped.sh
-│
-├── resources/                     # Resources like JSON mappings and requirements files
-│   ├── diagnosis_mappings.json
-│   └── requirements.txt
-│
-├── src/                           # Source Python scripts demonstrating various coding practices
-│   ├── 0_make_reqTxt.py
-│   ├── 1_building_functions.py
-│   ├── 2_make_modular_code.py
-│   ├── 3_use_a_main_function.py
-│   ├── 4_try_and_except.py
-│   ├── 5_command_line_arguments.py
-│   ├── 6_create_readme.py
-│   └── utils/
-│       ├── garbage.py
-│       ├── garbage_with_main.py
-│       ├── print_num_4.py
-│       └── __pycache__/
-│
-├── data/                          # Directory for generated log files and datasets
-│
-└── .git/                          # Version control directory (Git)
-"""
-
 ## How to Use This Repository
 
 ### Prerequisites
