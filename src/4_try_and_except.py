@@ -12,18 +12,18 @@ def get_value_from_dict(dictionary, key):
 vars = ["name", "age"]
 values = ["Dan", 28]
 
-sample_dict_full = {}
+sample_dict = {}
 for i in range(len(vars)):
-    sample_dict_full[vars[i]] = values[i]
+    sample_dict[vars[i]] = values[i]
     continue
 
-sample_dict_full = {"name": "Dan", "age": 28}
+sample_dict = {"name": "Dan", "age": 28}
 
 # This works correctly:
-print(get_value_from_dict(sample_dict_full, "name"))  # Output: Dan
+print(get_value_from_dict(sample_dict, "name"))  # Output: Dan
 
 # This also works correctly:
-print(get_value_from_dict(sample_dict_full, "city"))  # Output: Key not found
+print(get_value_from_dict(sample_dict, "city"))  # Output: Key not found
 
 # What if we accidentally pass in a list instead of a dictionary?
 sample_list = ['name', 'age']
@@ -51,20 +51,22 @@ def get_value_from_dict(dictionary, key):
     except TypeError:  # Explicitly catching TypeError
         print('Provided input is not a dictionary')
         return None
-
+get_value_from_dict(sample_dict, "name")  # Output: Dan
 # =============================================================================
 # AN EVEN BETTER WAY: USING IF STATEMENTS
 # =============================================================================
 
 # Even better approach: using if statements to avoid exceptions when possible:
 def get_value_from_dict(dictionary, key):
-    if not isinstance(dictionary, dict):  # Checking if the input is a dictionary
+    if not isinstance(dictionary, dict):
         print('Provided input is not a dictionary')
         return None
-    if key not in dictionary:  # Checking if the key exists in the dictionary
+    elif key not in dictionary:
         print('Key not found')
         return None
-    return dictionary[key]
+    else:
+        result = dictionary.get(key)
+        return result
 
 # This method is preferred because:
 # 1. It avoids unnecessary exceptions, making the code clearer and more predictable.
@@ -114,11 +116,12 @@ def process_row(row):
     adjusted_salary = salary * 1.03  # Assume a 3% salary increase
     
     # Return processed data (could be written back to a DataFrame or another structure)
-    return {
+    result_dict = {
         'name': name,
         'retirement_age': retirement_age,
         'adjusted_salary': adjusted_salary
     }
+    return result_dict
 
 # Iterate through each row in the DataFrame
 for index, row in df.iterrows():

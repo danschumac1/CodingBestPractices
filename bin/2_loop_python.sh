@@ -16,7 +16,7 @@ diabolical_plan=("take over the world" "destroy the animals" "dig to the center 
 for number_of_objects in ${number_of_objects[@]}; do
    for object_type in ${object_type[@]}; do
       for diabolical_plan in ${diabolical_plan[@]}; do
-         python ./src/command_line_arguments.py \
+         python ./src/5_command_line_arguments.py \
             --number_of_objects $number_of_objects \
             --object_type $object_type \
             --diabolical_plan $diabolical_plan >> $log

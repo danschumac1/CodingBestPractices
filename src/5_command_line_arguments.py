@@ -35,3 +35,6 @@ args = parser.parse_args()
 # =============================================================================
 def main():
     print(f"USING PYTHON SCRIPT: I will {args.diabolical_plan} with my {args.number_of_objects} {args.object_type}")
+
+if __name__ == "__main__":
+    main()  
